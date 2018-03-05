@@ -4,7 +4,7 @@
 Additional information about the variables, data and transformations used in the course project for the Johns Hopkins Getting and Cleaning Data course.
 
 ## Merges the training and the test sets to create one data set
-## Read the dataset into data tables. Following code lines do this job 
+## Read the dataset into data tables. Following code lines do this job using read.table function
 
 xtrain <-  read.table("./data/UCI HAR Dataset/train/X_train.txt")
 ytrain <-  read.table("./data/UCI HAR Dataset/train/y_train.txt")
@@ -41,7 +41,7 @@ colnames(activityLabels) <- c("Activity", "ActivityName")
 colnames(activityLabels)
 Dataset <- merge(MeanStd_Dataset,activityLabels,by = "Activity", all.x = TRUE)
 
-## 4. Appropriately labels the data set with descriptive variable names using gsub. See below code snippets
+## 4. Appropriately labels the data set with descriptive variable names using gsub.
 a <- colnames(Dataset)
 a <- gsub("mean","Mean",a)
 a <- gsub("std","Standard_Deviation",a)
