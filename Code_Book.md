@@ -1,6 +1,6 @@
 # Getting and Cleaning Data Project - Prakhar Prasad
 
-# Description
+## Description
 Additional information about the variables, data and transformations used in the course project for the Johns Hopkins Getting and Cleaning Data course.
 
 ## Merges the training and the test sets to create one data set
