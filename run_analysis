@@ -70,6 +70,6 @@ tidyDataSet <- Dataset
 tidyDataSet <- tbl_df(tidyDataSet)
 tidyDataSet <- arrange(tidyDataSet,Activity,Volunteer)
 tidyDataSet <- aggregate(. ~ Volunteer+Activity,tidyDataSet,mean)
-write.table(tidyDataSet,file = "Tidy Data Set.xlsx",row.names = FALSE)
+write.table(tidyDataSet,file = "Tidy Data Set.txt",row.names = FALSE)
 
 ## end of program ##
