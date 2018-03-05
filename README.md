@@ -4,7 +4,7 @@ Repo for the submission of the course project for the Johns Hopkins Getting and 
 # Overview
 This project serves to demonstrate the collection and cleaning of a data set that can be used for subsequent analysis. 
 
-# Making Modifications to This Script
+# Running this script
 Once you have obtained and unzipped the source files, you will need to make one modification to the R file before you can process the data. Note that on line 3 of run_analysis.R, you need to set the path of the working directory to relect the location of the source files in your own directory. Check for the setwd() function and replace the path with the path of your working directory. 
 
 # Project Summary
