@@ -58,9 +58,11 @@ Dataset <- merge(MeanStd_Dataset,activityLabels,by = "Activity", all.x = TRUE)
 ## 4. Appropriately labels the data set with descriptive variable names. 
 
 a <- colnames(Dataset)
-a <- gsub("mean","MEAN",a)
-a <- gsub("std","STD",a)
+a <- gsub("mean","Mean",a)
+a <- gsub("std","Standard_Deviation",a)
 a <- gsub("[[:punct:]]","",a)
+a<-  gsub("Freq","Frequency",a)
+a<-  gsub("Mag","Magnitude",a)
 colnames(Dataset) <- a
 
 ## 5: From the data set in step 4, creates a second, independent tidy data set with the
