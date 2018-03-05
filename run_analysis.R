@@ -1,7 +1,6 @@
 
 library(utils)
 library(dplyr)
-
 setwd("C:/Working Directory/Office/Data Science/Coursera/Getting Cleaning Data")
 
 ## Downloading and unzipping the dataset ##
@@ -27,7 +26,7 @@ ytest <-  read.table("./data/UCI HAR Dataset/test/y_test.txt")
 subjectTest <-  read.table("./data/UCI HAR Dataset/test/subject_test.txt")
 
 features <- read.table("./data/UCI HAR Dataset/features.txt")
-activityLabels = read.table("./data/UCI HAR Dataset/activity_labels.txt")
+activityLabels <- read.table("./data/UCI HAR Dataset/activity_labels.txt")
 unlink(destfile)
 
 colnames(xtrain) <- features[,2]  
